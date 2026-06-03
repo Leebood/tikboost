@@ -14,6 +14,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.libo.tikboost",
+      "buildNumber": "1",
       "infoPlist": {
         "NSCameraUsageDescription": "TikBoost needs camera access to take photos of products for video strategy analysis.",
         "NSPhotoLibraryUsageDescription": "TikBoost needs photo library access to select product images for video strategy generation.",
