@@ -1,0 +1,330 @@
+/* TikBoost App - English Localizations */
+
+/* General */
+"app.name" = "TikBoost";
+"app.tagline" = "AI Video Strategy - Create viral content for any platform";
+
+/* Navigation */
+"nav.home" = "Home";
+"nav.search" = "Search";
+"nav.upload" = "Upload";
+"nav.settings" = "Settings";
+
+/* Upload Screen */
+"upload.title" = "Video Strategist";
+"upload.subtitle" = "Generate video strategy for your content";
+"upload.freeUsage" = "free generations left";
+"upload.uploadText" = "Upload Image";
+"upload.uploadHint" = "Tap to select from gallery";
+"upload.takePhoto" = "Take Photo";
+"upload.chooseLibrary" = "Choose from Library";
+"upload.generateStrategy" = "Generate Strategy";
+"upload.searchLink" = "Search by keyword or URL";
+"upload.analyzing" = "Analyzing...";
+"upload.productDetected" = "Product detected";
+"upload.nonProductDetected" = "Non-product content detected";
+
+/* Content Mode */
+"upload.mode.title" = "Content Mode";
+"upload.mode.ecommerce" = "E-commerce";
+"upload.mode.ecommerce.subtitle" = "Product promotion with category-specific strategies";
+"upload.mode.shortvideo" = "Short Video";
+"upload.mode.shortvideo.subtitle" = "Viral content creation without specific product";
+"upload.mode.select" = "Select Content Mode";
+
+/* Product Categories */
+"category.apparel" = "Apparel";
+"category.apparel.subtitle" = "Fashion & Clothing";
+"category.beauty" = "Beauty";
+"category.beauty.subtitle" = "Cosmetics & Skincare";
+"category.food" = "Food";
+"category.food.subtitle" = "Food & Dining";
+"category.electronics" = "Electronics";
+"category.electronics.subtitle" = "3C & Gadgets";
+"category.home" = "Home";
+"category.home.subtitle" = "Home & Living";
+"category.mother_baby" = "Mother & Baby";
+"category.mother_baby.subtitle" = "Baby Products";
+"category.toys" = "Toys";
+"category.toys.subtitle" = "Kids & Games";
+"category.pet_supplies" = "Pet Supplies";
+"category.pet_supplies.subtitle" = "Pets & Animals";
+"category.accessories" = "Accessories";
+"category.accessories.subtitle" = "Fashion Items";
+"category.department_store" = "Department Store";
+"category.department_store.subtitle" = "General Merchandise";
+"category.appliances" = "Appliances";
+"category.appliances.subtitle" = "Home Appliances";
+"category.shoes_bags" = "Shoes & Bags";
+"category.shoes_bags.subtitle" = "Footwear & Bags";
+"category.auto_supplies" = "Auto Supplies";
+"category.auto_supplies.subtitle" = "Car Accessories";
+"category.shortvideo" = "Short Video";
+"category.shortvideo.subtitle" = "Viral Content";
+
+/* Scene Selection */
+"upload.scene.title" = "Use Scenario";
+"upload.scene.ecommerce" = "E-commerce";
+"upload.scene.ecommerce.subtitle" = "For product promotion";
+"upload.scene.shortvideo" = "Short Video";
+"upload.scene.shortvideo.subtitle" = "For viral content";
+"upload.scene.unavailable" = "Unavailable";
+"upload.scene.notAvailable" = "E-commerce promotion is only available for product images.";
+
+/* Analysis Screen */
+"analysis.title" = "Analyzing";
+"analysis.subtitle" = "Generating your video strategy...";
+"analysis.step1" = "Understanding content";
+"analysis.step2" = "Generating hook";
+"analysis.step3" = "Creating script";
+"analysis.step4" = "Building storyboard";
+
+/* Result Screen */
+"result.title" = "Your Strategy";
+"result.hook" = "Hook";
+"result.script" = "Script";
+"result.storyboard" = "Storyboard";
+"result.bgm" = "BGM";
+"result.cta" = "Call to Action";
+"result.copy" = "Copy";
+"result.regenerate" = "Regenerate";
+"result.disclaimer" = "AI generated strategy, for reference only";
+"result.copySuccess" = "Copied to clipboard";
+"result.scene.ecommerce" = "E-commerce Strategy";
+"result.scene.shortvideo" = "Short Video Strategy";
+
+/* Benchmark Screen */
+"benchmark.title" = "Benchmark Analysis";
+"benchmark.subtitle" = "Top performing videos in this category";
+"benchmark.template" = "Reusable Template";
+
+/* Settings Screen */
+"settings.title" = "Settings";
+"settings.account" = "Account";
+"settings.subscription" = "Subscription";
+"settings.history" = "Generation History";
+"settings.privacy" = "Privacy & Security";
+"settings.terms" = "Terms of Service";
+"settings.about" = "About";
+"settings.logout" = "Sign Out";
+"settings.currentPlan" = "Current Plan";
+"settings.freePlan" = "Free";
+"settings.proPlan" = "Pro";
+"settings.upgrade" = "Upgrade";
+"settings.usage" = "Usage This Month";
+"settings.generations" = "generations";
+"settings.historyEmpty" = "No generation history yet";
+"settings.privacyDesc" = "Manage your privacy settings and data";
+
+/* Subscription */
+"subscription.title" = "Choose Your Plan";
+"subscription.free.title" = "Free";
+"subscription.starter.title" = "Starter";
+"subscription.pro.title" = "Pro";
+"subscription.ultimate.title" = "Ultimate";
+"subscription.restore" = "Restore Purchases";
+"subscription.restoreDesc" = "Restore your previous subscription";
+"subscription.features.basic" = "Basic strategy generation";
+"subscription.features.trend" = "Trend analysis";
+"subscription.features.prioritySupport" = "Priority support";
+"subscription.features.analytics" = "Advanced analytics";
+"subscription.features.benchmark" = "Benchmark database access";
+"subscription.features.priority" = "Priority processing";
+"subscription.features.unlimited" = "Unlimited generations";
+"subscription.features.queue" = "Priority queue";
+"subscription.features.earlyAccess" = "Early access to new features";
+"subscription.legal" = "Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current period.";
+"subscription.legal2" = "You can manage your subscription and cancel anytime in your App Store settings.";
+"settings.termsDesc" = "Read our terms of service";
+"settings.aboutDesc" = "Version 1.0.0";
+
+/* Search Screen */
+"search.title" = "Search";
+"search.placeholder" = "Enter keyword or video URL";
+"search.keyword" = "Search by Keyword";
+"search.url" = "Analyze from URL";
+"search.analyze" = "Analyze";
+"search.analyzing" = "Analyzing video...";
+"search.noResults" = "No results found";
+"search.results" = "Analysis Results";
+"search.report" = "Actionable Report";
+"search.insights" = "Video Insights";
+"search.hookTemplates" = "Hook Templates";
+"search.scriptTemplates" = "Script Templates";
+
+/* Auth Screens */
+"auth.login.title" = "Welcome Back";
+"auth.login.subtitle" = "Sign in to your account";
+"auth.login.email" = "Email";
+"auth.login.password" = "Password";
+"auth.login.button" = "Sign In";
+"auth.login.forgotPassword" = "Forgot Password?";
+"auth.login.noAccount" = "Don't have an account?";
+"auth.login.signUp" = "Sign Up";
+"auth.login.error" = "Invalid email or password";
+
+"auth.register.title" = "Create Account";
+"auth.register.subtitle" = "Sign up to get started";
+"auth.register.email" = "Email";
+"auth.register.password" = "Password";
+"auth.register.confirmPassword" = "Confirm Password";
+"auth.register.button" = "Create Account";
+"auth.register.haveAccount" = "Already have an account?";
+"auth.register.signIn" = "Sign In";
+"auth.register.error" = "Registration failed. Please try again.";
+"auth.register.success" = "Account created successfully!";
+"auth.register.verification" = "Verification code sent to your email";
+"auth.register.verificationError" = "Failed to send verification code";
+
+"auth.forgotPassword.title" = "Reset Password";
+"auth.forgotPassword.subtitle" = "Enter your email to reset password";
+"auth.forgotPassword.email" = "Email";
+"auth.forgotPassword.button" = "Send Reset Link";
+"auth.forgotPassword.backToLogin" = "Back to Sign In";
+"auth.forgotPassword.success" = "Reset link sent to your email";
+"auth.forgotPassword.error" = "Failed to send reset link";
+"auth.forgotPassword.verificationCode" = "Enter Verification Code";
+"auth.forgotPassword.newPassword" = "New Password";
+"auth.forgotPassword.confirmPassword" = "Confirm New Password";
+"auth.forgotPassword.resetButton" = "Reset Password";
+"auth.forgotPassword.verificationError" = "Invalid or expired verification code";
+"auth.forgotPassword.resetSuccess" = "Password reset successfully!";
+
+/* Privacy */
+"privacy.notice.title" = "Privacy Notice";
+"privacy.notice.content" = "By using TikBoost, you agree that your uploaded images and content will be processed by AI models to generate video strategies. Your data may be shared with third-party AI service providers (OpenAI, Coze) for analysis purposes. We do not store your images after processing is complete.";
+"privacy.notice.agree" = "I Understand & Agree";
+
+/* Subscription */
+"subscription.free.title" = "Free Plan";
+"subscription.free.description" = "3 free generations per month";
+"subscription.pro.title" = "Pro Plan";
+"subscription.pro.price" = "$29.90/month";
+"subscription.pro.description" = "50 generations per month";
+"subscription.pro.badge" = "BEST VALUE";
+"subscription.upgrade" = "Upgrade Now";
+"subscription.restore" = "Restore Purchases";
+
+/* Common */
+"common.error" = "An error occurred";
+"common.retry" = "Retry";
+"common.cancel" = "Cancel";
+"common.confirm" = "Confirm";
+"common.save" = "Save";
+"common.delete" = "Delete";
+"common.edit" = "Edit";
+"common.close" = "Close";
+"common.loading" = "Loading...";
+"common.noData" = "No data available";
+
+/* Deep Analysis */
+"search.deepAnalysis" = "Deep Analysis";
+"search.deepAnalysis.title" = "UGC-VideoCap Analysis";
+"search.deepAnalysis.subtitle" = "Advanced video structure and template extraction";
+"search.deepAnalysis.analyze" = "Analyze with UGC-VideoCap";
+"search.deepAnalysis.analyzing" = "Analyzing video structure...";
+"search.deepAnalysis.complete" = "Analysis complete";
+"search.deepAnalysis.summary" = "Analysis Summary";
+"search.deepAnalysis.videoType" = "Video Type";
+"search.deepAnalysis.bestFor" = "Best For";
+"search.deepAnalysis.difficulty" = "Difficulty";
+"search.deepAnalysis.scriptTemplates" = "Script Templates";
+"search.deepAnalysis.hookTemplate" = "Hook Template";
+"search.deepAnalysis.scriptFramework" = "Script Framework";
+"search.deepAnalysis.ctaPattern" = "CTA Pattern";
+"search.deepAnalysis.keyPhrases" = "Key Phrases";
+"search.deepAnalysis.engagementAnalysis" = "Engagement Analysis";
+"search.deepAnalysis.engagementDrivers" = "Engagement Drivers";
+"search.deepAnalysis.emotionalTriggers" = "Emotional Triggers";
+"search.deepAnalysis.retentionFactors" = "Retention Factors";
+"search.deepAnalysis.viralPotential" = "Viral Potential";
+"search.deepAnalysis.platformOptimizations" = "Platform Optimizations";
+"search.deepAnalysis.reusableTemplates" = "Reusable Templates";
+"search.deepAnalysis.templateName" = "Template Name";
+"search.deepAnalysis.fillGuide" = "Fill Guide";
+"search.deepAnalysis.recommendations" = "Recommendations";
+"search.deepAnalysis.tiktok" = "TikTok";
+"search.deepAnalysis.instagramReels" = "Instagram Reels";
+"search.deepAnalysis.youtubeShorts" = "YouTube Shorts";
+"search.deepAnalysis.hashtags" = "Hashtags";
+"search.deepAnalysis.trends" = "Trends";
+"search.deepAnalysis.optimizedHook" = "Optimized Hook";
+"search.deepAnalysis.duration" = "Duration";
+"search.deepAnalysis.rhythmic" = "Rhythmic";
+"search.deepAnalysis.narrative" = "Narrative";
+"search.deepAnalysis.advanced" = "Advanced";
+"search.deepAnalysis.beginnerFriendly" = "Beginner-friendly";
+
+/* Trends Screen */
+"trends.title" = "Trend Analysis";
+"trends.subtitle" = "Discover trending topics and actionable insights";
+"trends.keyword" = "Enter keyword or topic";
+"trends.platform" = "Platform";
+"trends.analyze" = "Analyze Trends";
+"trends.analyzing" = "Analyzing...";
+"trends.insights" = "AI Insights";
+"trends.topics" = "Recommended Topics";
+"trends.topics.hot" = "Hot";
+"trends.topics.rising" = "Rising";
+"trends.topics.stable" = "Stable";
+"trends.actionPlan" = "Action Plan";
+"trends.actionPlan.priority.high" = "High Priority";
+"trends.actionPlan.priority.medium" = "Medium Priority";
+"trends.actionPlan.priority.low" = "Low Priority";
+"trends.actionPlan.steps" = "Steps";
+"trends.actionPlan.impact" = "Impact";
+"trends.contentIdeas" = "Content Ideas";
+"trends.contentIdeas.type.hook" = "Hook";
+"trends.contentIdeas.type.script" = "Script";
+"trends.contentIdeas.type.format" = "Format";
+"trends.contentIdeas.type.style" = "Style";
+"trends.hashtags" = "Hashtag Strategy";
+"trends.hashtags.primary" = "Primary";
+"trends.hashtags.secondary" = "Secondary";
+"trends.hashtags.trending" = "Trending";
+"trends.timing" = "Optimal Timing";
+"trends.timing.bestDays" = "Best Days";
+"trends.timing.bestTimes" = "Best Times";
+"trends.timing.reasoning" = "Why This Timing";
+"trends.competition" = "Competition Level";
+"trends.competition.low" = "Low";
+"trends.competition.medium" = "Medium";
+"trends.competition.high" = "High";
+"trends.opportunity" = "Opportunity Score";
+"trends.error" = "Failed to analyze trends";
+"trends.tryAgain" = "Try Again";
+
+/* Privacy Policy Screen */
+"privacy.title" = "Privacy Policy";
+"privacy.subtitle" = "Last updated: %@";
+"privacy.intro" = "TikBoost (\"we,\" \"us,\" or \"our\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and related services.";
+"privacy.contact" = "Contact Us";
+"common.close" = "Close";
+
+/* Age Verification */
+"age.title" = "Age Verification";
+"age.message" = "TikBoost requires users to be at least 13 years old. By continuing, you confirm that you are 13 or older.";
+"age.confirm" = "I am 13 or older";
+"age.cancel" = "Cancel";
+"age.error" = "You must be at least 13 years old to use TikBoost.";
+
+/* Privacy Settings */
+"settings.privacy" = "Privacy";
+"settings.privacy.tracking" = "Allow Tracking";
+"settings.privacy.trackingDesc" = "Used for personalized ads (disabled by default)";
+"settings.privacy.analytics" = "Analytics";
+"settings.privacy.analyticsDesc" = "Help us improve the app";
+"settings.privacy.privacyPolicy" = "Privacy Policy";
+"settings.privacy.viewPolicy" = "View our privacy policy";
+"settings.privacy.ageRating" = "Age Rating";
+"settings.privacy.ageRatingDesc" = "This app is rated for users 13+";
+
+/* App Store Info */
+"app.ageRating" = "13+";
+"app.ageRatingReason" = "Contains references to: Sexual content, Frequent/profane language, Unrestricted web access";
+
+/* Subscription Updates */
+"subscription.trendsLimit" = "Free Trend Analysis";
+"subscription.trendsLimitDesc" = "You have %d free trend analysis remaining this month";
+"subscription.noMoreTrends" = "No more trend analysis available";
+"subscription.noMoreTrendsDesc" = "Upgrade to Premium for unlimited trend analysis";
