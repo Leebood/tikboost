@@ -19,7 +19,7 @@
       "distribution": "internal",
       "env": {
         "EAS_BUILD_NO_EXPO_GO_WARNING": "true",
-        "EXPO_PUBLIC_BACKEND_BASE_URL": "http://localhost:9091"
+        "EXPO_PUBLIC_BACKEND_BASE_URL": "https://tikboost-backend.onrender.com"
       },
       "android": {
         "buildType": "apk"
@@ -29,7 +29,7 @@
       "distribution": "store",
       "env": {
         "EAS_BUILD_NO_EXPO_GO_WARNING": "true",
-        "EXPO_PUBLIC_BACKEND_BASE_URL": "https://api.tikboost.com"
+        "EXPO_PUBLIC_BACKEND_BASE_URL": "https://api.ailiveonline.cloud"
       },
       "android": {
         "buildType": "app-bundle"
