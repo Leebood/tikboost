@@ -5,7 +5,7 @@
 
 import { getBackendBaseUrl } from '@/utils/Environment';
 
-const BACKEND_BASE_URL = getBackendBaseUrl();
+const getApiBase = () => getBackendBaseUrl();
 
 // 热门话题接口
 interface TrendingTopic {
@@ -71,7 +71,7 @@ class TrendService {
    */
   async analyzeTrends(keyword: string, platform: string): Promise<TrendReport> {
     const response = await fetch(
-      `${BACKEND_BASE_URL}/api/v1/trends/analyze`,
+      `${getApiBase()}/api/v1/trends/analyze`,
       {
         method: 'POST',
         headers: {
@@ -95,7 +95,7 @@ class TrendService {
    */
   async searchRelatedTopics(keyword: string): Promise<TrendingTopic[]> {
     const response = await fetch(
-      `${BACKEND_BASE_URL}/api/v1/trends/topics?keyword=${encodeURIComponent(keyword)}`
+      `${getApiBase()}/api/v1/trends/topics?keyword=${encodeURIComponent(keyword)}`
     );
 
     if (!response.ok) {
@@ -111,7 +111,7 @@ class TrendService {
    */
   async getPlatformTrends(platform: string): Promise<TrendingTopic[]> {
     const response = await fetch(
-      `${BACKEND_BASE_URL}/api/v1/trends/platform?platform=${platform}`
+      `${getApiBase()}/api/v1/trends/platform?platform=${platform}`
     );
 
     if (!response.ok) {

@@ -357,18 +357,6 @@ export default function UploadScreen() {
           <Text style={styles.searchLinkText}>Browse strategy templates</Text>
         </TouchableOpacity>
 
-        {/* Analyze Link */}
-        <TouchableOpacity style={styles.searchLink} onPress={() => router.push('/search')}>
-          <Feather name="search" size={16} color="#888888" />
-          <Text style={styles.searchLinkText}>Analyze a video URL or keyword</Text>
-        </TouchableOpacity>
-
-        {/* Trends Link */}
-        <TouchableOpacity style={styles.searchLink} onPress={() => router.push('/trends')}>
-          <Feather name="trending-up" size={16} color="#888888" />
-          <Text style={styles.searchLinkText}>Discover trending topics</Text>
-        </TouchableOpacity>
-
         {/* Privacy Policy Link */}
         <TouchableOpacity style={styles.privacyPolicyLink} onPress={() => router.push('/privacy')}>
           <Text style={styles.privacyPolicyText}>Privacy Policy</Text>

@@ -2,7 +2,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { getBackendBaseUrl } from '@/utils/Environment';
 import { AUTH_TOKEN_KEY } from './AuthService';
 
-const API_BASE = getBackendBaseUrl();
+const getApiBase = () => getBackendBaseUrl();
 
 export interface VideoInfo {
   id: string;
@@ -126,7 +126,7 @@ async function getAuthToken(): Promise<string | null> {
 export async function searchVideos(keyword?: string, url?: string): Promise<SearchResult> {
   const token = await getAuthToken();
   
-  const response = await fetch(`${API_BASE}/api/v1/video/search`, {
+  const response = await fetch(`${getApiBase()}/api/v1/video/search`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -151,7 +151,7 @@ export async function searchVideos(keyword?: string, url?: string): Promise<Sear
 export async function getExecutionReport(videoId: string): Promise<ExecutionReport> {
   const token = await getAuthToken();
   
-  const response = await fetch(`${API_BASE}/api/v1/video/execution-report/${videoId}`, {
+  const response = await fetch(`${getApiBase()}/api/v1/video/execution-report/${videoId}`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -172,7 +172,7 @@ export async function getExecutionReport(videoId: string): Promise<ExecutionRepo
 export async function analyzeVideoFromUrl(videoId: string): Promise<ExecutionReport> {
   const token = await getAuthToken();
   
-  const response = await fetch(`${API_BASE}/api/v1/video/analyze/${videoId}`, {
+  const response = await fetch(`${getApiBase()}/api/v1/video/analyze/${videoId}`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -193,7 +193,7 @@ export async function analyzeVideoFromUrl(videoId: string): Promise<ExecutionRep
 export async function getDeepAnalysisReport(videoId: string): Promise<DeepAnalysisReport> {
   const token = await getAuthToken();
   
-  const response = await fetch(`${API_BASE}/api/v1/video/deep-analysis/${videoId}`, {
+  const response = await fetch(`${getApiBase()}/api/v1/video/deep-analysis/${videoId}`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',

@@ -6,7 +6,7 @@
 import { getBackendBaseUrl } from '@/utils/Environment';
 
 // 后端 API Base URL
-const BACKEND_BASE_URL = getBackendBaseUrl();
+const getApiBase = () => getBackendBaseUrl();
 
 // 工作流 ID 配置
 const WORKFLOW_IDS = {
@@ -71,7 +71,7 @@ export async function uploadImage(imageUri: string): Promise<string> {
     );
     formData.append('image', fileInfo as any);
 
-    const response = await fetch(`${BACKEND_BASE_URL}/api/v1/upload`, {
+    const response = await fetch(`${getApiBase()}/api/v1/upload`, {
       method: 'POST',
       body: formData,
     });
@@ -98,7 +98,7 @@ export async function runProductUnderstandingWorkflow(
 ): Promise<ProductInsight> {
   try {
     const response = await fetch(
-      `${BACKEND_BASE_URL}/api/v1/coze/workflow/product_understanding`,
+      `${getApiBase()}/api/v1/coze/workflow/product_understanding`,
       {
         method: 'POST',
         headers: {
@@ -134,7 +134,7 @@ export async function runStrategyGenerationWorkflow(
 ): Promise<StrategyResult> {
   try {
     const response = await fetch(
-      `${BACKEND_BASE_URL}/api/v1/coze/workflow/strategy_generation`,
+      `${getApiBase()}/api/v1/coze/workflow/strategy_generation`,
       {
         method: 'POST',
         headers: {
@@ -170,7 +170,7 @@ export async function runBenchmarkLookupWorkflow(
 ): Promise<BenchmarkReport> {
   try {
     const response = await fetch(
-      `${BACKEND_BASE_URL}/api/v1/coze/workflow/benchmark_lookup`,
+      `${getApiBase()}/api/v1/coze/workflow/benchmark_lookup`,
       {
         method: 'POST',
         headers: {

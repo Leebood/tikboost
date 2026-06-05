@@ -12,12 +12,6 @@ const modules = [
     icon: 'plus-square',
   },
   {
-    title: 'Templates',
-    subtitle: 'Start from proven short-video frameworks and save favorites.',
-    route: '/templates',
-    icon: 'layers',
-  },
-  {
     title: 'Analyze',
     subtitle: 'Paste a video URL or keyword to extract structure and opportunities.',
     route: '/search',
@@ -28,6 +22,12 @@ const modules = [
     subtitle: 'Find content angles, topics, hashtags, and platform timing ideas.',
     route: '/trends',
     icon: 'trending-up',
+  },
+  {
+    title: 'Templates',
+    subtitle: 'Start from proven short-video frameworks and save favorites.',
+    route: '/templates',
+    icon: 'layers',
   },
 ] as const;
 
@@ -48,12 +48,10 @@ export default function HomeScreen() {
         </View>
 
         <View style={styles.primaryPanel}>
-          <Text style={styles.panelLabel}>Next best action</Text>
-          <Text style={styles.panelTitle}>Create a strategy or analyze a video before you post.</Text>
-          <TouchableOpacity style={styles.primaryButton} onPress={() => router.push('/upload')}>
-            <Text style={styles.primaryButtonText}>Create Strategy</Text>
-            <Feather name="arrow-right" size={18} color="#FFFFFF" />
-          </TouchableOpacity>
+          <Text style={styles.panelLabel}>Your trend engine</Text>
+          <Text style={styles.panelTitle}>
+            With TikBoost planning and analysis, you are the next trend.
+          </Text>
         </View>
 
         <View style={styles.grid}>

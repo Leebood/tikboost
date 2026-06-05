@@ -6,7 +6,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { getBackendBaseUrl } from '@/utils/Environment';
 
-const API_BASE = getBackendBaseUrl();
+const getApiBase = () => getBackendBaseUrl();
 
 // 存储键
 const AUTH_TOKEN_KEY = '@tikboost_auth_token';
@@ -82,7 +82,7 @@ async function clearAuthData(): Promise<void> {
  */
 export async function sendVerificationCode(email: string): Promise<{ success: boolean; error?: string }> {
   try {
-    const response = await fetch(`${API_BASE}/api/v1/auth/send-verification`, {
+    const response = await fetch(`${getApiBase()}/api/v1/auth/send-verification`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email }),
@@ -103,7 +103,7 @@ export async function sendVerificationCode(email: string): Promise<{ success: bo
  */
 export async function verifyCode(email: string, code: string): Promise<{ success: boolean; error?: string }> {
   try {
-    const response = await fetch(`${API_BASE}/api/v1/auth/verify-code`, {
+    const response = await fetch(`${getApiBase()}/api/v1/auth/verify-code`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, code }),
@@ -131,7 +131,7 @@ export async function register(
   ageRange?: string
 ): Promise<AuthResponse> {
   try {
-    const response = await fetch(`${API_BASE}/api/v1/auth/register`, {
+    const response = await fetch(`${getApiBase()}/api/v1/auth/register`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password, code, ageRange }),
@@ -158,7 +158,7 @@ export async function register(
  */
 export async function login(email: string, password: string): Promise<AuthResponse> {
   try {
-    const response = await fetch(`${API_BASE}/api/v1/auth/login`, {
+    const response = await fetch(`${getApiBase()}/api/v1/auth/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password }),
@@ -184,7 +184,7 @@ export async function login(email: string, password: string): Promise<AuthRespon
  */
 export async function forgotPassword(email: string): Promise<{ success: boolean; error?: string }> {
   try {
-    const response = await fetch(`${API_BASE}/api/v1/auth/forgot-password`, {
+    const response = await fetch(`${getApiBase()}/api/v1/auth/forgot-password`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email }),
@@ -206,7 +206,7 @@ export async function forgotPassword(email: string): Promise<{ success: boolean;
  */
 export async function resetPassword(email: string, token: string, newPassword: string): Promise<{ success: boolean; error?: string }> {
   try {
-    const response = await fetch(`${API_BASE}/api/v1/auth/reset-password`, {
+    const response = await fetch(`${getApiBase()}/api/v1/auth/reset-password`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, token, newPassword }),
@@ -228,7 +228,7 @@ export async function getCurrentUser(): Promise<User | null> {
     const token = await getAuthToken();
     if (!token) return null;
 
-    const response = await fetch(`${API_BASE}/api/v1/auth/me`, {
+    const response = await fetch(`${getApiBase()}/api/v1/auth/me`, {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${token}`,
@@ -264,7 +264,7 @@ export async function logout(): Promise<void> {
   try {
     const token = await getAuthToken();
     if (token) {
-      await fetch(`${API_BASE}/api/v1/auth/logout`, {
+      await fetch(`${getApiBase()}/api/v1/auth/logout`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,
