@@ -27,3 +27,4 @@ ios/build/
 config/google-play-service-account.json
 assets/*.tar.gz
 *.tar.gz
+.cozeproj/reduction
