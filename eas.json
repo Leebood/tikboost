@@ -8,7 +8,8 @@
       "developmentClient": true,
       "distribution": "internal",
       "env": {
-        "EAS_BUILD_NO_EXPO_GO_WARNING": "true"
+        "EAS_BUILD_NO_EXPO_GO_WARNING": "true",
+        "EXPO_PUBLIC_BACKEND_BASE_URL": "http://localhost:9091"
       },
       "android": {
         "buildType": "apk"
@@ -17,7 +18,8 @@
     "preview": {
       "distribution": "internal",
       "env": {
-        "EAS_BUILD_NO_EXPO_GO_WARNING": "true"
+        "EAS_BUILD_NO_EXPO_GO_WARNING": "true",
+        "EXPO_PUBLIC_BACKEND_BASE_URL": "http://localhost:9091"
       },
       "android": {
         "buildType": "apk"
@@ -26,7 +28,8 @@
     "production": {
       "distribution": "store",
       "env": {
-        "EAS_BUILD_NO_EXPO_GO_WARNING": "true"
+        "EAS_BUILD_NO_EXPO_GO_WARNING": "true",
+        "EXPO_PUBLIC_BACKEND_BASE_URL": "https://api.tikboost.com"
       },
       "android": {
         "buildType": "app-bundle"
