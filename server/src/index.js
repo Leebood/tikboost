@@ -2,29 +2,35 @@ import express from 'express';
 import cors from 'cors';
 
 const app = express();
-const PORT = process.env.PORT || 9091;
+const PORT = process.env.PORT || 10000;
 
-// Middleware
 app.use(cors());
-app.use(express.json());
+app.use(express.json({ limit: '10mb' }));
 
-// Health check
 app.get('/api/v1/health', (req, res) => {
-  res.json({ status: 'ok', message: 'TikBoost Backend is running!' });
+  res.json({
+    status: 'ok',
+    message: 'TikBoost Backend is running!',
+    timestamp: new Date().toISOString()
+  });
 });
 
-// Import routes
 import authRoutes from './routes/auth.js';
 import videoRoutes from './routes/video.js';
-import trendRoutes from './routes/trends.js';
+import trendsRoutes from './routes/trends.js';
+import analysisRoutes from './routes/analysis.js';
+import cozeWorkflowRoutes from './routes/cozeWorkflow.js';
+import uploadRoutes from './routes/upload.js';
 
-// Use routes
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/video', videoRoutes);
-app.use('/api/v1/trends', trendRoutes);
+app.use('/api/v1/trends', trendsRoutes);
+app.use('/api/v1/analysis', analysisRoutes);
+app.use('/api/v1/coze/workflow', cozeWorkflowRoutes);
+app.use('/api/v1', uploadRoutes);
 
-// Start server
 app.listen(PORT, () => {
   console.log(`🚀 TikBoost Backend server is running on port ${PORT}`);
   console.log(`🌐 Health check: http://localhost:${PORT}/api/v1/health`);
+  console.log("==> Your service is live 🎉");
 });
