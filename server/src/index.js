@@ -21,6 +21,7 @@ import trendsRoutes from './routes/trends.js';
 import analysisRoutes from './routes/analysis.js';
 import cozeWorkflowRoutes from './routes/cozeWorkflow.js';
 import uploadRoutes from './routes/upload.js';
+import subscriptionRoutes from './routes/subscription.js';
 
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/video', videoRoutes);
@@ -28,6 +29,7 @@ app.use('/api/v1/trends', trendsRoutes);
 app.use('/api/v1/analysis', analysisRoutes);
 app.use('/api/v1/coze/workflow', cozeWorkflowRoutes);
 app.use('/api/v1', uploadRoutes);
+app.use('/api/v1/subscription', subscriptionRoutes);
 
 app.listen(PORT, () => {
   console.log(`🚀 TikBoost Backend server is running on port ${PORT}`);
